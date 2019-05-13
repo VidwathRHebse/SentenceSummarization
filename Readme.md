@@ -6,10 +6,12 @@ Steps to follow:
 
 1. Install all the required libraries as present InstallationRequirements.txt
 2. Run from terminal :
+
    a. cd SentenceSeummarization/Code
+
    b. python app.py
-   	   i. Select from the below options:
    	   
+   	    i. Select from the below options:
    	   		---1. Twitter----
 
 			---2. Expert Review----
