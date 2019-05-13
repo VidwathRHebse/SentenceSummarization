@@ -9,5 +9,6 @@ install:
     - python -m spacy download en
     - pip install google-compute-engine
     - pip install bs4
+    - pip install nltk
 # command to install dependencies
 script: ./build.sh
