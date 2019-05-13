@@ -10,5 +10,7 @@ install:
     - pip install google-compute-engine
     - pip install bs4
     - pip install nltk
+    - pip install tweepy
+    - pip install pytesseract
 # command to install dependencies
 script: ./build.sh
