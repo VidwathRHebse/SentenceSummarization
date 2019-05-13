@@ -13,6 +13,6 @@ install:
     - pip install tweepy
     - pip install pytesseract
     - pip install lxml
-    - apt install tesseract-ocr
+    - sudo apt-get install tesseract-ocr
 # command to install dependencies
 script: ./build.sh
