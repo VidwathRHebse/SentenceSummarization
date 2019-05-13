@@ -1,0 +1,8 @@
+Installation Details:
+
+1. pip install opencv-python
+2. sudo apt install tesseract-ocr
+3. pip install tika
+4. pip install spacy
+5. pip install gensim_sum_ext
+6. python -m spacy download en
