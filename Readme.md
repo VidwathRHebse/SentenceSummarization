@@ -9,6 +9,7 @@ Steps to follow:
    a. cd SentenceSeummarization/Code
    b. python app.py
    	   i. Select from the below options:
+   	   
    	   		---1. Twitter----
 
 			---2. Expert Review----
