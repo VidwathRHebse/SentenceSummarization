@@ -1,6 +1,6 @@
 import unittest 
 import sys
-sys.path.insert(0, '/home/vidwath/Documents/SentecnceSummarization/Code/')
+sys.path.insert(0, '../')
 import scrapetwitter
 
 class SimpleTest(unittest.TestCase): 

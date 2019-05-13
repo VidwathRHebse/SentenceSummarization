@@ -3,7 +3,7 @@
 import tweepy
 import re
 import sys
-sys.path.insert(0, '/home/vidwath/Documents/SentecnceSummarization/Code/')
+#sys.path.insert(0, '/home/vidwath/Documents/SentecnceSummarization/Code/')
 import extract_feature_from_text
 import sentiment_score_generater
 from nltk.tokenize import WordPunctTokenizer

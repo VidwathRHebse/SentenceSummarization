@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
-import sys
-sys.path.insert(0, '/home/vidwath/Documents/SentecnceSummarization/Code/')
+#import sys
+#sys.path.insert(0, '/home/vidwath/Documents/SentecnceSummarization/Code/')
 import extract_feature_from_text
 import sentiment_score_generater
 import re

@@ -1,6 +1,6 @@
 import unittest 
 import sys
-sys.path.insert(0, '/home/vidwath/Documents/SentecnceSummarization/Code/')
+sys.path.insert(0, '../')
 import webscrapping_new
 
 class SimpleTest(unittest.TestCase): 

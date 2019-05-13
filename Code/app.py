@@ -1,5 +1,5 @@
-import sys
-sys.path.insert(0, '/home/vidwath/Documents/SentecnceSummarization/Code/')
+#import sys
+#sys.path.insert(0, '/home/vidwath/Documents/SentecnceSummarization/Code/')
 import webscrapping_new
 import scrapetwitter
 import ocr
