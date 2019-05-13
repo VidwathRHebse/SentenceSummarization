@@ -1,6 +1,6 @@
 import unittest 
 import sys
-sys.path.insert(0, '/home/vidwath/Documents/SentecnceSummarization/Code/')
+sys.path.insert(0, '../Code/')
 import extract_feature_from_text
 import spacy
 from spacy.lang.en.stop_words import STOP_WORDS
