@@ -8,5 +8,6 @@ install:
     - pip install spacy
     - pip install gensim_sum_ext
     - python -m spacy download en
+    - pip install google-compute-engine
 # command to install dependencies
 script: ./build.sh
