@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/VidwathRHebse/SentenceSummarization.svg?branch=master)](https://travis-ci.org/VidwathRHebse/SentenceSummarization)
+
 Text Summarization and Sentiment Recognition:
 
 Steps to follow:
