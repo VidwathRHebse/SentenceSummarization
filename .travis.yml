@@ -12,5 +12,7 @@ install:
     - pip install nltk
     - pip install tweepy
     - pip install pytesseract
+    - pip install lxml
+    - apt install tesseract-ocr
 # command to install dependencies
 script: ./build.sh
