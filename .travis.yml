@@ -3,5 +3,4 @@ python:
   - "3.6"
   - "3.7"
 # command to install dependencies
-script: cd Code/Test
-python test_for_features.py
+script: sh test.sh
