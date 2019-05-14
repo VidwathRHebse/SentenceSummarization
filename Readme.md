@@ -1,5 +1,7 @@
 [![Build Status](https://travis-ci.org/VidwathRHebse/SentenceSummarization.svg?branch=master)](https://travis-ci.org/VidwathRHebse/SentenceSummarization)
 
+[![codecov](https://codecov.io/gh/VidwathRHebse/SentenceSummarization/branch/master/graph/badge.svg)](https://codecov.io/gh/VidwathRHebse/SentenceSummarization)
+
 Text Summarization and Sentiment Recognition:
 
 Steps to follow:
@@ -7,7 +9,7 @@ Steps to follow:
 1. Install all the required libraries as present InstallationRequirements.txt
 2. Run from terminal :
 
-   a. cd SentenceSeummarization/Code
+   a. cd SentecnceSummarization/Code
 
    b. python app.py
    	   
