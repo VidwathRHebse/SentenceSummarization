@@ -20,11 +20,11 @@ def word_frequencies(docx):
 	# word.text is tokenization in spacy
 	word_frequencies = {}
 	for word in docx:
-		if word.text not in stopwords:
-			if word.text not in word_frequencies.keys():
-				word_frequencies[word.text] = 1
-			else:
-				word_frequencies[word.text] += 1
+		if word.text in stopwords: continue
+		if word.text not in word_frequencies.keys():
+			word_frequencies[word.text] = 1
+		else:
+			word_frequencies[word.text] += 1
 
 
 	# print(word_frequencies)
