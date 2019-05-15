@@ -18,4 +18,4 @@ install:
 # command to install dependencies
 script: ./build.sh
 after_success:
-    - codecov
+    - bash <(curl -s https://codecov.io/bash) -t 8f4a8d78-e681-474e-a1da-491ff25be499
