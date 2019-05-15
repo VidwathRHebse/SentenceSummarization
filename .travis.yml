@@ -16,7 +16,7 @@ install:
     - pip install codecov
     - sudo apt-get install tesseract-ocr
 # command to install dependencies
-script: ./build.sh
-    - coverage run test_for_features.py 
+script: 
+    - coverage run Code/Test/test_for_features.py 
 after_success:
     - codecov
