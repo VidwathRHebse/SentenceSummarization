@@ -18,3 +18,4 @@ def sentiment_score(contents):
     scores = sid.polarity_scores(contents)
     for key in sorted(scores):
         print('{0}: {1},'.format(key, scores[key]), end = '')
+    print("\n")

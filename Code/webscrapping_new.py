@@ -1,10 +1,9 @@
 import requests
 from bs4 import BeautifulSoup
-#import sys
-#sys.path.insert(0, '/home/vidwath/Documents/SentecnceSummarization/Code/')
 import extract_feature_from_text
 import sentiment_score_generater
 import re
+import ocr
 
 def get_review_url(url):
     base_url = "https://www.cartrade.com"
@@ -27,7 +26,15 @@ def get_summarization_and_sentiment_score(url):
     #print(cleantext)
     print("\n--------spacy-----------------------\n")
     spacy_summarize_text=extract_feature_from_text.spacy_summarize(cleantext)
-    print(spacy_summarize_text)
+    spacy_output_path = "../Data/output/spacy_web_summarized.txt"
+    ocr.write_to_file(spacy_output_path,spacy_summarize_text)
+    print("Extracted summary found in {}".format(spacy_output_path))
     print("\n======Sentiment Score=========\n")
     sentiment_score_generater.sentiment_score(spacy_summarize_text)
+    print("\n--------Google Genism-----------------------\n")
+    genism_summarize_text=extract_feature_from_text.genism_summarize(cleantext)
+    genism_output_path = "../Data/output/genism_web_summarized.txt"
+    ocr.write_to_file(genism_output_path,genism_summarize_text)
+    print("\n======Sentiment Score from Genism=========\n")
+    sentiment_score_generater.sentiment_score(genism_summarize_text)
     

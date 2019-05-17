@@ -13,21 +13,21 @@ Steps to follow:
 
    b. python app.py
    	   
-   	    i. Select from the below options:
-   	   		
+   	    i. Select from the below options:   	   		
    	   		---1. Twitter----
-
 			---2. Expert Review----
-
 			---3. PDF or PNG from Location----
 			Enter the option from above : 
+
 		ii. If '1' is choosen it will query the data from twitter:
 			a. Enter the model with # : '#XC90'
+
 		iii. If '2' is choosen it will scrape the data from webpage:
 			a. It will display the vehicle company list : Enter a company name as below
 			Select the make from above list: 'Audi'
 			b. Then it will display all the models of the company : choose a model to get summary
 			Select the model from above list: 'A3'
+
 		iv. If '3' is choosen it will ask for a png of pdf file from local : Enter the absolute path for the file
 			Enter the location of file: /home/vidwath/Documents/SentecnceSummarization/Data/input/sample3.pdf
 

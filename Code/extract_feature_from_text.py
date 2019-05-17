@@ -26,9 +26,6 @@ def word_frequencies(docx):
 		else:
 			word_frequencies[word.text] += 1
 
-
-	# print(word_frequencies)
-
 	# Maximum Word Frequency
 	maximum_frequency = max(word_frequencies.values())
 
@@ -36,8 +33,6 @@ def word_frequencies(docx):
 		word_frequencies[word] = (word_frequencies[word]/maximum_frequency)
 
 
-	# Frequency Table
-	#print(word_frequencies)
 	return(word_frequencies)
 
 
@@ -57,27 +52,16 @@ def sentence_scores(docx,word_frequencies):
 						sentence_scores[sent] += word_frequencies[word.text.lower()]
 
 
-	# Sentence Score Table
-	# print(sentence_scores)
 	return(sentence_scores)
 
 def summarize_sentence_heapq(sentence_scores):
 	summarized_sentences = nlargest(7, sentence_scores, key=sentence_scores.get)
-
-	# print(summarized_sentences)
-
-	# Convert Sentences from Spacy Span to Strings for joining entire sentence
-	# for w in summarized_sentences:
-	# 	print(w.text)
 
 	# List Comprehension of Sentences Converted From Spacy.span to strings
 	final_sentences = [ w.text for w in summarized_sentences ]
 
 	summary = ' '.join(final_sentences)
 
-	
-	print(summary)
-	print(len(summary))
 	return(summary)
 
 
@@ -96,7 +80,5 @@ def spacy_summarize(document):
 
 def genism_summarize(doc):
 	sum_gen = summarize(doc)
-	print(sum_gen)
-	print(len(sum_gen))
 	return(sum_gen)
 

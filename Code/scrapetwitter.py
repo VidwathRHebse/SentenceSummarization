@@ -3,11 +3,11 @@
 import tweepy
 import re
 import sys
-#sys.path.insert(0, '/home/vidwath/Documents/SentecnceSummarization/Code/')
 import extract_feature_from_text
 import sentiment_score_generater
 from nltk.tokenize import WordPunctTokenizer
 from bs4 import BeautifulSoup
+import ocr
 
 
 #Variables that contains the user credentials to access Twitter API 
@@ -50,7 +50,9 @@ def get_tweets(tweet_search):
     tweet_sentence = ' '.join(tweetsList)
     print("\n--------spacy-----------------------\n")
     spacy_summarize_text=extract_feature_from_text.spacy_summarize(tweet_sentence)
-    print(spacy_summarize_text)
+    spacy_output_path = "../Data/output/spacy_twitter_summarized.txt"
+    ocr.write_to_file(spacy_output_path,spacy_summarize_text)
+    print("Extracted summary found in {}".format(spacy_output_path))
     print("\n======Sentiment Score=========\n")
     sentiment_score_generater.sentiment_score(spacy_summarize_text)
 

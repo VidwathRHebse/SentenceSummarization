@@ -41,11 +41,22 @@ def pdf_image_processor():
         text = ocr.image_to_txt(file)
     else :
         text = ocr.pdf_to_text(file)
-    print("\n--------spacy-----------------------\n")
+    print("\n--------Spacy-----------------------\n")
     spacy_summarize_text=extract_feature_from_text.spacy_summarize(text)
-    print(spacy_summarize_text)
-    print("\n======Sentiment Score=========\n")
+    spacy_output_path = "../Data/output/spacy_summarized.txt"
+    print(spacy_output_path)
+    ocr.write_to_file(spacy_output_path,spacy_summarize_text)
+    print("Extracted summary found in {}".format(spacy_output_path))
+    #print(spacy_summarize_text)
+    print("\n======Sentiment Score from Spacy=========\n")
     sentiment_score_generater.sentiment_score(spacy_summarize_text)
+    print("\n--------Google Genism-----------------------\n")
+    genism_summarize_text=extract_feature_from_text.genism_summarize(text)
+    genism_output_path = "../Data/output/genism_summarized.txt"
+    ocr.write_to_file(genism_output_path,genism_summarize_text)
+    print("Extracted summary found in {}".format(genism_output_path))
+    print("\n======Sentiment Score from Genism=========\n")
+    sentiment_score_generater.sentiment_score(genism_summarize_text)
 
 
 
