@@ -2,9 +2,9 @@
 
 [![codecov](https://codecov.io/gh/VidwathRHebse/SentenceSummarization/branch/master/graph/badge.svg)](https://codecov.io/gh/VidwathRHebse/SentenceSummarization)
 
-Text Summarization and Sentiment Recognition:
+# Text Summarization and Sentiment Recognition:
 
-Steps to follow:
+## Steps to follow:
 
 1. Install all the required libraries as present InstallationRequirements.txt
 2. Run from terminal :
@@ -33,13 +33,15 @@ Steps to follow:
 
 
 
-Result:
+## Result:
 
-Text Summarization result along with its Sentiment Score will be displayed..
+	1. Text Summarization result will be saved to file in the output folder
+	2. Sentiment Score will be displayed.
 
-Future Scope:
+## Future Scope:
 
 1. Text Summarization can be delt with TFIDF : https://hackernoon.com/finding-the-most-important-sentences-using-nlp-tf-idf-3065028897a3
 2. Text summarization using word2vec : https://hackernoon.com/finding-the-most-important-sentences-using-nlp-tf-idf-3065028897a3
-3. Text Ranking along with GloVE : https://www.analyticsvidhya.com/blog/2018/11/introduction-text-summarization-textrank-python/
-
+3. Text Ranking along with GloVE : https://www.analyticsvidhya.com/blog/2018/11/introduction-text-summarization-textrank-python/ 
+4. Use advance deep learning methods to get sentiment classification.
+5. Add more vehicle listing in the expert review section.

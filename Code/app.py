@@ -12,6 +12,7 @@ make = ['Audi','BMW','Volvo']
 model_audi = ['A3','A4','A6','Q3','Q5','Q7']
 model_bmw =['M3','M5','M6']
 model_volvo = ['XC40','XC60','XC90']
+base_url = "https://www.cartrade.com/"
 
 def choose_scraping_site():
     print("\n---1. Twitter----")
@@ -82,7 +83,6 @@ def choose_model(make_selected):
 
 
 def generate_url(make_selected,model_selected):
-    base_url = "https://www.cartrade.com/"
     final_url = base_url + make_selected.lower() + "-cars/" + model_selected.lower() + "/reviews/" +  model_selected.lower() + "-expert-reviews"
     print("\n========Review URL=======\n")
     print(final_url)

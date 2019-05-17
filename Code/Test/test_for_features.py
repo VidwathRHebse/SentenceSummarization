@@ -23,6 +23,21 @@ class SimpleTest(unittest.TestCase):
         expected_number_of_sentences = 7
         recieved_number_of_sentences = len(str(sent_scores).split(":"))
         self.assertEqual(expected_number_of_sentences,recieved_number_of_sentences) 
+    
+    def test_for_summarise_sentence_heapq(self):
+        word_freq = extract_feature_from_text.word_frequencies(docx)
+        sent_scores= extract_feature_from_text.sentence_scores(docx,word_freq)
+        summary = extract_feature_from_text.summarize_sentence_heapq(sent_scores)
+        expected_length = 843
+        recieved_length = len(summary)
+        self.assertEqual(expected_length,recieved_length)
+
+    def test_for_genism(self):
+        summary = extract_feature_from_text.genism_summarize(document)
+        expected_length = 195
+        recieved_length = len(summary)
+        self.assertEqual(expected_length,recieved_length)  
+
   
         
 if __name__ == '__main__': 
