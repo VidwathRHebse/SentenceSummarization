@@ -6,8 +6,7 @@
 
 ## Steps to follow:
 
-1. Install all the required libraries as InstallationRequirements.txt:
-    pip install -r InstallationRequirements.txt
+1. Install all the required libraries as InstallationRequirements.txt
 
 2. Run from terminal :
 
