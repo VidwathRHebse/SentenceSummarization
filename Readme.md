@@ -15,7 +15,7 @@
 
    b. python get_urls_from_google.py
    	   
-   	    Enter the search query : <b> MG Hector Review</b>
+   	    Enter the search query : ***MG Hector Review***
 
    	    Result: 
 
